@@ -70,8 +70,17 @@ enableEmoji = true
       type = 'fragments'
       weight = 10
 
+[homepage]
+  layout = "profile"
+  showRecent = true
+  showRecentItems = 5
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+
+
 [params.author]
   name = "boxijiekexun"
+  image = "img/github-avatar.png"
   headline = "Computer Science · Systems · Database"
   bio = "记录计算机科学学习、项目和技术思考。"
 
