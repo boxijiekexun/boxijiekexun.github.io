@@ -1,5 +1,17 @@
- 
-# Vim 使用笔记：从基础命令到我的 .vimrc 配置
+---
+title: "Vim 使用笔记：从基础命令到我的 .vimrc 配置"
+date: 2026-10-13
+draft: false
+description: "整理 Vim 的常用命令、编辑技巧和个人 Vim 配置。"
+tags:
+  - Vim
+  - Linux
+  - WSL
+categories:
+  - 技术笔记
+showTableOfContents: true
+
+---
 
 > Vim 的门槛不在于快捷键太多，而在于它把“编辑”拆成了**操作、对象和范围**。熟悉这套思路以后，许多看似复杂的命令其实都能自然组合出来。
 
