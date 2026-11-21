@@ -1,0 +1,7 @@
+{{ with .Params }}
+  <div class="tech-badges">
+    {{ range . }}
+      <span class="tech-badge">{{ . }}</span>
+    {{ end }}
+  </div>
+{{ end }}

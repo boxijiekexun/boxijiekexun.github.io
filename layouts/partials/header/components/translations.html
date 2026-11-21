@@ -1,0 +1,22 @@
+<nav class="language-switch" aria-label="{{ i18n "global.language" }}">
+  {{ range $index, $site := hugo.Sites }}
+    {{ $languageCode := $site.Language.Lang }}
+    {{ $target := "" }}
+    {{ range $.AllTranslations }}
+      {{ if eq .Language.Lang $languageCode }}
+        {{ $target = .RelPermalink }}
+      {{ end }}
+    {{ end }}
+    {{ if not $target }}
+      {{ $target = $site.Home.RelPermalink }}
+    {{ end }}
+    {{ if gt $index 0 }}
+      <span aria-hidden="true">/</span>
+    {{ end }}
+    {{ if eq $languageCode $.Language.Lang }}
+      <span aria-current="true">{{ $site.Language.Params.displayName }}</span>
+    {{ else }}
+      <a href="{{ $target }}">{{ $site.Language.Params.displayName }}</a>
+    {{ end }}
+  {{ end }}
+</nav>

@@ -1,0 +1,143 @@
+.home-profile {
+  width: 100%;
+}
+
+.home-readme {
+  max-width: 52rem;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.home-readme h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgb(115 115 115 / 0.22);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.home-readme h2:first-child {
+  margin-top: 0;
+}
+
+.home-readme p,
+.home-readme li {
+  line-height: 1.75;
+}
+
+.home-readme ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem 2rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.home-readme li {
+  padding-left: 1.15rem;
+  position: relative;
+}
+
+.home-readme li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background-color: rgb(59 130 246 / 0.75);
+}
+
+.tech-badges {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid rgb(115 115 115 / 0.24);
+  border-radius: 0.45rem;
+  background-color: rgb(245 245 245 / 0.9);
+  color: #404040;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.dark .tech-badge {
+  border-color: rgb(212 212 212 / 0.16);
+  background-color: rgb(38 38 38 / 0.9);
+  color: #e5e5e5;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.language-switch a,
+.language-switch span {
+  color: inherit;
+}
+
+.language-switch a {
+  text-decoration: none;
+}
+
+.language-switch a:hover,
+.language-switch a:focus-visible {
+  color: rgb(37 99 235);
+}
+
+.dark .language-switch a:hover,
+.dark .language-switch a:focus-visible {
+  color: rgb(96 165 250);
+}
+
+.language-switch span[aria-current="true"] {
+  color: rgb(37 99 235);
+}
+
+.dark .language-switch span[aria-current="true"] {
+  color: rgb(96 165 250);
+}
+
+@media (min-width: 640px) {
+  .home-readme ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-profile {
+    animation: home-fade-in 320ms ease-out both;
+  }
+
+  .language-switch a {
+    transition: color 150ms ease;
+  }
+}
+
+@keyframes home-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

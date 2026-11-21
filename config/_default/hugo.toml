@@ -5,9 +5,9 @@
 theme = "blowfish" # UNCOMMENT THIS LINE
 baseURL = "https://boxijiekexun.github.io/"
 defaultContentLanguage = "zh-cn"
-languageCode = "zh-cn"
+defaultContentLanguageInSubdir = false
 
-title = "CS Learing Notes"
+title = "CS Learning Notes"
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
@@ -81,8 +81,6 @@ enableEmoji = true
 [params.author]
   name = "boxijiekexun"
   image = "img/github-avatar.png"
-  headline = "Computer Science · Systems · Database"
-  bio = "记录计算机科学学习、项目和技术思考。"
 
   links = [
     { github = "https://github.com/boxijiekexun" }

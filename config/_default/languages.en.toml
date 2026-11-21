@@ -1,0 +1,13 @@
+disabled = false
+direction = "ltr"
+label = "English"
+locale = "en-US"
+title = "boxijiekexun"
+weight = 2
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "January 2, 2006"
+  description = "Notes on computer science, systems programming, databases, and backend development."
